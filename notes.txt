@@ -1,0 +1,7 @@
+- Zaimplementuj prosty blog internetowy (REST API zamiast UI), który będzie pozwalał na:
+    - dodawanie nowych artykułów
+    - publikowanie artykułów (stan draft, public)
+    - pobieranie artykułu po url/slug
+    - pobieranie listy artykułów, ze stronicowaniem, posortowanych po dacie publikacji
+- Zastosuj podział na moduły i czystą architekturę
+
