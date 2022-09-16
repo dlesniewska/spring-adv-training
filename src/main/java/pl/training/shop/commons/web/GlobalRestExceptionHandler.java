@@ -26,7 +26,7 @@ public class GlobalRestExceptionHandler {
         return responseBuilder.build(exception, INTERNAL_SERVER_ERROR, locale);
     }
 
-    @ExceptionHandler
+    @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ExceptionDto> onMethodArgumentNotValidException(MethodArgumentNotValidException exception, Locale locale) {
         var description = responseBuilder.getDescription(exception, locale, getValidationErrors(exception));
         return responseBuilder.build(description, BAD_REQUEST);
